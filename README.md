@@ -18,3 +18,5 @@ documentation branch created
 R file documentation
 ## File description
 R file comput data science Bike data
+## additional changes 
+additional changes samples
