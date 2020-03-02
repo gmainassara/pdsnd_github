@@ -27,12 +27,12 @@ result
 #############################################
 #1-2 What is the most common day of week?
 mostweek=function(x,y,z){
-mx<-weekdays(as.Date(x))
-my<-weekdays(as.Date(y))
-mz<-weekdays(as.Date(z))
-res<-c(mx,my,mz)
-n<-sort(table(res),decreasing=TRUE)[1:1]
-return (n)
+	mx<-weekdays(as.Date(x))
+	my<-weekdays(as.Date(y))
+	mz<-weekdays(as.Date(z))
+	res<-c(mx,my,mz)
+	n<-sort(table(res),decreasing=TRUE)[1:1]
+	return (n)
 }
 result<-mostweek(ny[,2],wash [,2],chi [,2])
 result
