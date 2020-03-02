@@ -15,12 +15,12 @@ head(chi)
 #1 Popular times of travel (i.e., occurs most often in the start time) 
 #1-1 What is the most common month
 mostmonth=function(x,y,z){
-mx<-strftime(strptime(x,"%Y-%m-%d %H:%M:%S"),"%m")
-my<-strftime(strptime(y,"%Y-%m-%d %H:%M:%S"),"%m")
-mz<-strftime(strptime(z,"%Y-%m-%d %H:%M:%S"),"%m")
-res<-c(mx,my,mz)
-n<-sort(table(res),decreasing=TRUE)[1:1]
-return (n)
+	mx<-strftime(strptime(x,"%Y-%m-%d %H:%M:%S"),"%m")
+	my<-strftime(strptime(y,"%Y-%m-%d %H:%M:%S"),"%m")
+	mz<-strftime(strptime(z,"%Y-%m-%d %H:%M:%S"),"%m")
+	res<-c(mx,my,mz)
+	n<-sort(table(res),decreasing=TRUE)[1:1]
+	return (n)
 }
 result<-mostmonth(ny[,2],wash [,2],chi [,2])
 result
